@@ -1,0 +1,13 @@
+-- =============================================================================
+-- Payo Billiard — LOCAL / TEST seed only. NEVER run against production.
+-- `supabase db reset` applies this automatically on a local stack.
+--
+-- This file intentionally contains no fake venues, players or transactions.
+-- Create test users through the app's /register page (or Supabase Studio),
+-- then promote one to admin with the statement below.
+-- =============================================================================
+
+-- Promote a test account to admin (replace the email, run in local SQL editor):
+-- insert into public.user_roles (user_id, role)
+-- select id, 'admin' from auth.users where email = 'admin@example.test'
+-- on conflict do nothing;
